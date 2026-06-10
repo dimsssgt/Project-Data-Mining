@@ -23,22 +23,22 @@ Aplikasi ini menganalisis pola perjalanan pengguna layanan transportasi online (
 ## Struktur Proyek
 
 ```
-ola_app/
-├── app.py                              ← Entry point aplikasi
-├── config.py                           ← Konstanta dan pemetaan lokasi
-├── styles.py                           ← CSS kustom untuk tampilan
-├── data_loader.py                      ← Load dan preprocessing dataset
-├── model.py                            ← Logika K-Means Clustering
-├── sidebar.py                          ← Komponen UI sidebar
-├── clustering.py                       ← Orkestrasi pipeline clustering
-├── indore_ola_dataset_readable.xlsx    ← Dataset bawaan
-├── requirements.txt                    ← Daftar dependensi
+Project Data Mining
+├── app.py
+├── config.py
+├── styles.py
+├── data_loader.py
+├── model.py
+├── sidebar.py
+├── clustering.py
+├── indore_ola_dataset_readable.xlsx
+├── requirements.txt
 └── tabs/
     ├── __init__.py
-    ├── ringkasan.py                    ← Tab 1: Ringkasan & insight
-    ├── visualisasi.py                  ← Tab 2: Grafik & visualisasi
-    ├── evaluasi.py                     ← Tab 3: Evaluasi model
-    └── data.py                         ← Tab 4: Tabel & download CSV
+    ├── ringkasan.py
+    ├── visualisasi.py
+    ├── evaluasi.py
+    └── data.py
 ```
 
 ---
@@ -48,14 +48,14 @@ ola_app/
 **1. Clone atau download proyek ini**
 
 ```bash
-git clone https://github.com/username/ola-clustering.git
-cd ola-clustering
+git clone https://github.com/dimsssgt/Project-Data-Mining
+cd Project Data Mining
 ```
 
 **2. Install dependensi**
 
 ```bash
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 ```
 
 **3. Jalankan aplikasi**
@@ -73,14 +73,14 @@ Aplikasi akan otomatis terbuka di `http://localhost:8501`
 ## Cara Pakai
 
 ### Dataset Bawaan
-Klik tombol **"Jalankan Clustering"** di sidebar — aplikasi langsung memproses dataset Indore OLA bawaan.
+Data Indore langsung tampak dengan hasilnya
 
 ### Dataset Kustom
 1. Buka ekspander **"Upload Dataset Kustom"** di sidebar
 2. Upload file `.xlsx` atau `.csv`
 3. (Opsional) Upload model `.pkl` jika ingin menggunakan model yang sudah dilatih sebelumnya
 4. Centang **"Aktifkan dataset kustom"**
-5. Klik **"Jalankan dengan Dataset Kustom"**
+5. Klik **"Jalankan Clustering"**
 
 ### Format Dataset Kustom
 Dataset yang di-upload harus memiliki kolom berikut:
@@ -97,13 +97,13 @@ Dataset yang di-upload harus memiliki kolom berikut:
 
 | Library | Kegunaan |
 |---|---|
-| `streamlit` | Framework UI aplikasi web |
-| `pandas` | Manipulasi dan analisis data |
-| `scikit-learn` | Algoritma K-Means dan preprocessing |
-| `matplotlib` | Plotting grafik |
-| `seaborn` | Heatmap dan visualisasi statistik |
-| `joblib` | Load/save model `.pkl` |
-| `openpyxl` | Baca file `.xlsx` |
+| `streamlit`
+| `pandas`
+| `scikit-learn`
+| `matplotlib`
+| `seaborn`
+| `joblib`
+| `openpyxl`
 
 ---
 
