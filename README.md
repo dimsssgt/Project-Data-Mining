@@ -95,7 +95,7 @@ Dataset yang di-upload harus memiliki kolom berikut:
 
 ## Dependensi
 
-| Library | Kegunaan |
+| Library
 |---|---|
 | `streamlit`
 | `pandas`
